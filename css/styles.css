@@ -10,7 +10,7 @@ body, h1, h2, h3, p, ul, li {
 body {
     background-color: #f5f5f5;
     color: #333;
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 /* Style the header */
@@ -24,7 +24,6 @@ header {
 /* Style the navigation links */
 nav {
     background-color: #333;
-    color: #fff;
     text-align: center;
     padding: 10px;
 }
@@ -33,6 +32,8 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 20px;
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
 /* Style the main content */
@@ -52,32 +53,37 @@ main {
     background-color: #fff;
     border: 1px solid #ddd;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     width: calc(50% - 20px); /* Two columns with spacing */
+    transition: transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Style product images */
 .listing_image {
     display: block;
     margin: 0 auto;
+    width: 100%;
+    height: auto;
 }
 
 /* Style product titles */
 .product-browser h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 /* Style product descriptions */
 .product-browser h4 {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
     color: #777;
 }
 
 /* Style product price */
 .product-browser .price {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #ff6600;
     margin-top: 10px;
@@ -88,9 +94,10 @@ main {
     background-color: #ff6600;
     color: #fff;
     border: none;
-    padding: 5px 10px;
-    margin: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .product-browser button:hover {
@@ -111,16 +118,24 @@ footer ul {
 
 footer li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 /* Address styling */
 address {
     font-style: normal;
     color: #ccc;
+    font-size: 14px;
 }
 
 /* Add hover effect to navigation links */
 nav a:hover {
     color: #ff6600;
+}
+
+/* Apply some responsive design */
+@media (max-width: 768px) {
+    .product-browser li {
+        width: 100%;
+    }
 }
