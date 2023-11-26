@@ -20,6 +20,9 @@ body {
     margin: 20px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position:fixed;
+    right:1em;
+    top:6em;
 }
 
 /* Style the cart title */
@@ -152,6 +155,13 @@ footer {
     text-align: center;
     padding: 10px;
 }
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
 
 footer ul {
     list-style: none;
@@ -168,9 +178,11 @@ address {
     color: #ccc;
     font-size: 14px;
 }
-
 /* Add hover effect to navigation links */
 nav a:hover {
+    color: #ff6600;
+}
+footer a:hover {
     color: #ff6600;
 }
 
@@ -178,5 +190,8 @@ nav a:hover {
 @media (max-width: 768px) {
     .product-browser li {
         width: 100%;
+    }
+    .product-browser {
+        grid-template-columns: 1fr;/*Display one column on small screens*/
     }
 }
