@@ -1,2 +1,2 @@
 # web-apps-assignment
-Web Application Development Course Assignment test
+Web Application Frontend site. Example frontend of a used goods shop.
